@@ -1,0 +1,17 @@
+name: Hello World Workflow
+
+on:
+  push:
+    branches:
+      - main # Runs the workflow on every push to the main branch
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest # The environment where the workflow runs
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4 # Checks out your repo so GitHub Actions can access it
+
+      - name: Print Hello World
+        run: echo "Hello World!" # Outputs "Hello World!" in the GitHub Actions log
