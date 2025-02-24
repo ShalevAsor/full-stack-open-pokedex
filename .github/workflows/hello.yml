@@ -15,3 +15,12 @@ jobs:
 
       - name: Print Hello World
         run: echo "Hello World!" # Outputs "Hello World!" in the GitHub Actions log
+
+      - name: Now it is
+        run: date # Prints the current date and time
+
+      - name: Directory content
+        run: ls -l # Lists directory contents in long format
+
+      - name: Goodbye
+        run: echo "Goodbye World!" # Outputs "Goodbye World!" in the GitHub Actions log
